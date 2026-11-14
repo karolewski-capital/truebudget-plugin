@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "truebudget": {
+      "type": "http",
+      "url": "https://truebudget.ninja/api/mcp"
+    }
+  }
+}

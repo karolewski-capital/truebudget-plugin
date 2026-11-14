@@ -1,0 +1,20 @@
+{
+  "name": "truebudget",
+  "version": "1.0.0",
+  "description": "Review and update your TrueBudget books by asking: balances, spending, categories, transfers, reports, receipts and reconciliation. No money moves.",
+  "author": {
+    "name": "TrueBudget",
+    "url": "https://truebudget.ninja"
+  },
+  "homepage": "https://truebudget.ninja/assistant",
+  "repository": "https://github.com/karolewski-capital/truebudget-plugin",
+  "license": "MIT",
+  "keywords": [
+    "bookkeeping",
+    "accounting",
+    "budgeting",
+    "personal-finance",
+    "small-business"
+  ],
+  "privacyPolicyUrl": "https://truebudget.ninja/privacy"
+}

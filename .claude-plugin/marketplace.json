@@ -1,0 +1,15 @@
+{
+  "name": "truebudget",
+  "description": "The TrueBudget plugin: connect Claude to your TrueBudget books.",
+  "owner": {
+    "name": "TrueBudget",
+    "url": "https://truebudget.ninja"
+  },
+  "plugins": [
+    {
+      "name": "truebudget",
+      "source": "./",
+      "description": "Review and update your TrueBudget books by asking. No money moves."
+    }
+  ]
+}
