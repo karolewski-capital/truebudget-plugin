@@ -45,10 +45,14 @@ Category shares follow the same sign as the transaction and add up to its amount
 | Categorize or edit transactions                           | `update_transaction` (several: `update_transactions_batch`).                           |
 | Record money moved between their own accounts             | `create_transfer`, or `link_transfer` when both sides are already recorded.            |
 | Categorize future imports automatically                   | `preview_rule`, then `create_rule`; `run_rules` applies rules to existing transactions. |
-| Attach a receipt                                          | `request_document_upload`, upload the file, `confirm_document_upload`, `attach_receipt`. |
+| Attach a receipt                                          | `request_document_upload`, upload the file, `confirm_document_upload`, `attach_receipt` (see Files below). |
 | Reconcile an account against a statement                  | `list_reconciliation_accounts`, then `auto_reconcile_account` and the matching tools.  |
 
 Resolve names to ids with the read tools (`list_accounts`, `search_categories`, `search_transactions`) instead of asking the user for ids.
+
+## Files
+
+Uploading a receipt, statement or bill file means sending the file's bytes yourself with an HTTP `PUT` to the URL `request_document_upload` returns. Call `request_document_upload` only when you can make that request. If you cannot, do not request or confirm an upload: ask the user to upload the file in TrueBudget (on the Documents page), then find it with `list_documents` and attach or reconcile it from there. Statements already uploaded to TrueBudget need no upload.
 
 ## Before writing
 

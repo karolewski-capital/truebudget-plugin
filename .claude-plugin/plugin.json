@@ -1,6 +1,6 @@
 {
   "name": "truebudget",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Review and update your TrueBudget books by asking: balances, spending, categories, transfers, reports, receipts and reconciliation. No money moves.",
   "author": {
     "name": "TrueBudget",
